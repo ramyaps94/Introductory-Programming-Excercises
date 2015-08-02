@@ -1,6 +1,7 @@
 import com.diamond.DiamondNamedTriangle;
 import com.diamond.DiamondTriangle;
 import com.diamond.IsoscelesTriangle;
+import com.fizzbuzz.FizzBuzz;
 import com.triangle.AnAsterisk;
 import com.triangle.HorizontalLine;
 import com.triangle.RightTriangle;
@@ -16,6 +17,7 @@ public class Main {
         IsoscelesTriangle asteriskCenteredTriangle = new IsoscelesTriangle();
         DiamondTriangle asteriskDiamondCenteredTriangle = new DiamondTriangle();
         DiamondNamedTriangle asteriskNamedTriangle = new DiamondNamedTriangle();
+        FizzBuzz fizzBuzzGenarator = new FizzBuzz();
         separator.drawSeparation("prints an asterisk");
         asterisk.printAnAsterisk();
         int number = 8;
@@ -33,6 +35,9 @@ public class Main {
         separator.drawSeparation("prints a centered diamond of asterisk with the name in the middle name");
         String name = "Bill";
         asteriskNamedTriangle.printNamedTriangle(number,name);
+        separator.drawSeparation("FizzBuzz is a simple number game");
+        number = 100;
+        fizzBuzzGenarator.generateFizzBuzzSeries(number);
 
     }
 }
