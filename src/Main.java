@@ -2,6 +2,7 @@ import com.diamond.DiamondNamedTriangle;
 import com.diamond.DiamondTriangle;
 import com.diamond.IsoscelesTriangle;
 import com.fizzbuzz.FizzBuzz;
+import com.primenumbergenerator.PrimeNumberGenerator;
 import com.triangle.AnAsterisk;
 import com.triangle.HorizontalLine;
 import com.triangle.RightTriangle;
@@ -17,7 +18,8 @@ public class Main {
         IsoscelesTriangle asteriskCenteredTriangle = new IsoscelesTriangle();
         DiamondTriangle asteriskDiamondCenteredTriangle = new DiamondTriangle();
         DiamondNamedTriangle asteriskNamedTriangle = new DiamondNamedTriangle();
-        FizzBuzz fizzBuzzGenarator = new FizzBuzz();
+        FizzBuzz fizzBuzzGenerator = new FizzBuzz();
+        PrimeNumberGenerator generator = new PrimeNumberGenerator();
         separator.drawSeparation("prints an asterisk");
         asterisk.printAnAsterisk();
         int number = 8;
@@ -37,7 +39,9 @@ public class Main {
         asteriskNamedTriangle.printNamedTriangle(number,name);
         separator.drawSeparation("FizzBuzz is a simple number game");
         number = 100;
-        fizzBuzzGenarator.generateFizzBuzzSeries(number);
-
+        fizzBuzzGenerator.generateFizzBuzzSeries(number);
+        separator.drawSeparation("prime number generator");
+        number = 30;
+        generator.generatePrimeNumbers(number);
     }
 }
