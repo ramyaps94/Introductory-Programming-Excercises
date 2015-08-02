@@ -1,3 +1,4 @@
+import com.diamond.DiamondTriangle;
 import com.diamond.IsoscelesTriangle;
 import com.triangle.AnAsterisk;
 import com.triangle.HorizontalLine;
@@ -12,6 +13,7 @@ public class Main {
         VerticalLine asteriskPerLine = new VerticalLine();
         RightTriangle asteriskRightTriangle = new RightTriangle();
         IsoscelesTriangle asteriskCenteredTriangle = new IsoscelesTriangle();
+        DiamondTriangle asteriskDiamondCenterdTriangle = new DiamondTriangle();
         separator.drawSeparation("prints an asterisk");
         asterisk.printAnAsterisk();
         int number = 8;
@@ -24,5 +26,7 @@ public class Main {
         separator.drawSeparation("prints an Isosceles centered triangle of asterisk");
         number = 3;
         asteriskCenteredTriangle.drawIsoscelesTriangle(number);
+        separator.drawSeparation("prints a centered diamond of asterisk");
+        asteriskDiamondCenterdTriangle.drawDiamondCenteredTriangle(number);
     }
 }
