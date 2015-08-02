@@ -1,4 +1,4 @@
-public class PrintNAsterisk {
+public class HorizontalLine {
     public void printNAsterisk(int number) {
         int i = 0;
         while (i < number) {
