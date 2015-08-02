@@ -1,3 +1,5 @@
+package com.triangle;
+
 public class HorizontalLine {
     public void printNAsterisk(int number) {
         int i = 0;

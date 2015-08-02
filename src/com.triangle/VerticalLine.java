@@ -1,3 +1,5 @@
+package com.triangle;
+
 public class VerticalLine {
     public void printAnAsteriskPerLine(int number) {
     int i= 0;
