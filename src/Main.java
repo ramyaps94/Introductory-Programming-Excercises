@@ -2,7 +2,7 @@ import com.diamond.DiamondNamedTriangle;
 import com.diamond.DiamondTriangle;
 import com.diamond.IsoscelesTriangle;
 import com.fizzbuzz.FizzBuzz;
-import com.primenumbergenerator.PrimeNumberGenerator;
+import com.primenumbergenerator.PrimeFactorGenerator;
 import com.triangle.AnAsterisk;
 import com.triangle.HorizontalLine;
 import com.triangle.RightTriangle;
@@ -19,7 +19,7 @@ public class Main {
         DiamondTriangle asteriskDiamondCenteredTriangle = new DiamondTriangle();
         DiamondNamedTriangle asteriskNamedTriangle = new DiamondNamedTriangle();
         FizzBuzz fizzBuzzGenerator = new FizzBuzz();
-        PrimeNumberGenerator generator = new PrimeNumberGenerator();
+        PrimeFactorGenerator generator = new PrimeFactorGenerator();
         separator.drawSeparation("prints an asterisk");
         asterisk.printAnAsterisk();
         int number = 8;
@@ -42,6 +42,6 @@ public class Main {
         fizzBuzzGenerator.generateFizzBuzzSeries(number);
         separator.drawSeparation("prime number generator");
         number = 30;
-        generator.generatePrimeNumbers(number);
+        generator.generateFactors(number);
     }
 }
