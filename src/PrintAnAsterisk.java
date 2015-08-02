@@ -1,6 +1,6 @@
 public class PrintAnAsterisk {
-    public void printAsterisk()
+    public void printAnAsterisk()
     {
-        System.out.print("*");
+        System.out.println("*");
     }
 }
